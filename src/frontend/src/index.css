@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Page background: #F3F6FA very light blue-gray */
+    --background: 0.97 0.01 240;
+    /* Headings: #111827 near-black */
+    --foreground: 0.18 0.01 264;
+    /* Cards: #FFFFFF */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.01 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.01 264;
+    /* Primary button: #0D2B4D dark navy */
+    --primary: 0.22 0.07 243;
+    --primary-foreground: 0.99 0 0;
+    /* Secondary */
+    --secondary: 0.92 0.015 240;
+    --secondary-foreground: 0.22 0.07 243;
+    /* Muted */
+    --muted: 0.94 0.01 240;
+    --muted-foreground: 0.52 0.02 264;
+    /* Accent: #2F80C9 blue */
+    --accent: 0.55 0.14 244;
+    --accent-foreground: 0.99 0 0;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Borders: #E3E8EF */
+    --border: 0.92 0.012 240;
+    --input: 0.92 0.012 240;
+    --ring: 0.55 0.14 244;
+
+    /* Charts */
+    --chart-1: 0.55 0.14 244;
+    --chart-2: 0.6 0.12 160;
+    --chart-3: 0.65 0.15 290;
+    --chart-4: 0.7 0.15 40;
+    --chart-5: 0.6 0.13 20;
+
+    /* Sidebar: deep navy gradient base #0B2C4A */
+    --sidebar: 0.22 0.07 243;
+    --sidebar-foreground: 0.99 0 0;
+    --sidebar-primary: 0.55 0.14 244;
+    --sidebar-primary-foreground: 0.99 0 0;
+    /* Inactive nav: #B9C7D6 pale blue-gray */
+    --sidebar-accent: 0.8 0.03 240;
+    --sidebar-accent-foreground: 0.8 0.03 240;
+    --sidebar-border: 0.28 0.06 243;
+    --sidebar-ring: 0.55 0.14 244;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
